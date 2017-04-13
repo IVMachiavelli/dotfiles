@@ -84,3 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias badpac="sudo rm -rf /var/lib/pacman/db.lck"
+alias pacup="sudo freshclam && sudo pacman -Syyu"
+alias aurup="sudo yaourt -Syyu"
