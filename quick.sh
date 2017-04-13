@@ -1,1 +1,1 @@
-sudo pacman -Syyu -y && sudo pacman -S wireshark-gtk zsh etherape firefox vivaldi-stable chromium atom nvim cherrytree clamav vlc gimp keepassx2 go i3 rofi compton feh lxappearance htop nethogs docker nmap gparted libreoffice-fresh -y 
+sudo pacman -Syyu -y && sudo pacman -S kodi wireshark-gtk zsh etherape firefox vivaldi-stable chromium atom nvim cherrytree clamav vlc gimp keepassx2 go i3 rofi compton feh lxappearance htop nethogs docker nmap gparted libreoffice-fresh -y 
