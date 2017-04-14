@@ -85,5 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias badpac="sudo rm -rf /var/lib/pacman/db.lck"
-alias pacup="sudo freshclam && sudo pacman -Syyu"
+alias freshup="sudo freshclam && sudo pacman -Syyu"
 alias aurup="sudo yaourt -Syyu"
+alias fuckstarbucks="sudo rm -rf /etc/NetworkManager/system-connections/starbucks && sudo ifconfig wlp2s0 down && sudo macchanger -r wlp2s0 && sudo ifconfig wlp2s0 up"
