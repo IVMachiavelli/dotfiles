@@ -2,9 +2,9 @@ set $mod Mod1
 
 # Widow Colours
 #                         border   background   text     indicator
-  client.focused          #E73938  $E73938     #ffffff  $colorI
-  client.focused_inactive #262626  #262626     #ffffff  $colorI
-  client.unfocused        #262626  #262626     #ffffff  $colorI
+  client.focused          #E73938  #E73938     #ffffff 
+  client.focused_inactive #262626  #262626     #ffffff
+  client.unfocused        #262626  #262626     #ffffff
   client.urgent           #E73938  #E73938     #0E0E0A
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -149,7 +149,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # i3 lock keybinding
-bindsym $mod+shift+x exec i3lock --color "$base01"
+bindsym $mod+shift+x exec i3lock
 
 # Disable borders
 hide_edge_borders both
@@ -159,5 +159,7 @@ hide_edge_borders both
 exec --no-startup-id nm-applet
 # Wallpaper
 exec_always feh --bg-scale ~/Wallpaper/ocean.jpeg
+# Random Wallpaper
+# bindsym $mod+" exec "wal -i ~/Wallpaper -o wal-set"
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
