@@ -1,5 +1,6 @@
 # dotfiles
-Just so I can get up and running again with as little issues as possible.
+My dotfiles, always a work in progress.
 
 # Todo
-re-write bash scripts to something more respectable.
+1. Write install scripts for all packages and docker containers.
+2. Get wal-script to run on startup.
