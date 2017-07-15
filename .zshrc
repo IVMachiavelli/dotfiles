@@ -31,5 +31,3 @@ alias stopalldocker="docker stop $(docker ps -a -q)"
 # Set Gopath
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-alias news="rss"

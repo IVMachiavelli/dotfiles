@@ -1,20 +1,5 @@
 set $mod Mod1
 
-# Color Variables
-set $bg "#E73938"
-set $fg "#262626"
-set $txt "#FFFFFF"
-set $urgent "#0E0E0A"
-set $wall "#000000"
-
-# Class		         Border	    Background     text      Child Border
-#-------------------|------------|--------------|---------|---------------|
-client.focused  	  $bg         $bg   	     $txt       $bg
-client.focused_inactive   $fg         $fg            $txt       $bg
-client.unfocused 	  $fg	      $fg            $txt       $bg
-client.urgent		  $bg	      $fg    	     $txt       $bg
-client.placeholder	  $bg	      $bg            $txt       $bg
-
 font pango:monospace 0
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -83,7 +68,7 @@ bindsym $mod+a focus parent
 set $w1 "1: Command"
 set $w2 "2: Web"
 set $w3 "3: Social"
-set $w4 "4:"
+set $w4 "4: Development"
 set $w5 "5:"
 set $w6 "6:"
 set $w7 "7:"
