@@ -9,7 +9,7 @@ sudo eopkg install -y golang r hugo p7zip macchanger gnome-todo asciinema bleach
 
 					# Programming Tools #
 #################################################################
-sudo eopkg install -y vscode sublime rstudio
+sudo eopkg install -y vscode rstudio
 # Git Kraken (3rd Party)
 sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/programming/gitkraken/pspec.xml
 sudo eopkg it gitkraken*.eopkg;sudo rm gitkraken*.eopkg
@@ -22,7 +22,7 @@ sudo eopkg install -y docker kitematic
 
 					# Commo Tools #
 #################################################################
-sudo eopkg install -y wire telegram twitch telegram		
+sudo eopkg install -y wire telegram twitch		
 # Slack (3rd Party)												
 sudo eopkg bi -y --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/network/im/slack-desktop/pspec.xml
 sudo eopkg it -y slack-desktop*.eopkg;sudo rm slack-desktop*.eopkg
@@ -83,9 +83,3 @@ sudo eopkg install -y libreoffice-writer
 sudo eopkg bi -y --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/multimedia/music/spotify/pspec.xml
 sudo eopkg it -y spotify*.eopkg;sudo rm spotify*.eopkg
 #################################################################
-
-
-# ADD HERE
-# Git Clone
-# Spiderfoot
-# domain_analyzer
