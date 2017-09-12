@@ -9,7 +9,7 @@ sudo eopkg install -y golang r hugo p7zip macchanger gnome-todo asciinema bleach
 
 					# Programming Tools #
 #################################################################
-sudo eopkg install -y vscode rstudio
+sudo eopkg install -y vscode atom rstudio
 # Git Kraken (3rd Party)
 sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/programming/gitkraken/pspec.xml
 sudo eopkg it gitkraken*.eopkg;sudo rm gitkraken*.eopkg
