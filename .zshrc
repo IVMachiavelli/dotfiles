@@ -27,13 +27,14 @@ alias Xreload="xrdb ~/.Xresources"
 # Package Management
 alias Up="sudo eopkg up"
 alias Install="sudo eopkg install"
+alias Search="sudo eopkg search"
 
 # Weather
-alias Weather="curl wttr.in/$location"
+alias Weather="curl wttr.in/Bangkok"
 
 # Networking
 alias Mac="sudo ifconfig wlp2s0 down && sudo macchanger -r wlp2s0 && sudo ifconfig wlp2s0 up"
-alias RemoteIp="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"  
+alias RemoteIp="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
 alias Fuckstarbucks="sudo rm -rf /etc/NetworkManager/system-connections/starbucks && sudo ifconfig wlp2s0 down && sudo macchanger -r wlp2s0 && sudo ifconfig wlp2s0 up"
 
 # Docker
@@ -43,29 +44,28 @@ alias DockerPrune="sudo docker system prune"
 # Remove non-running Docker containers
 alias DockerRemoveAll="docker rm 'docker ps --no-trunc -aq'"
 
+# Powershell AppImage
+alias PowerShell=~/PowerShell/PowerShell_AppImage/./PowerShell-6.0.0-beta.7-x86_64.AppImage
+
 # Docker Powershell Developement
-alias Powershell="docker run -it --name powershell microsoft/powershell"
+alias PowershellDocker="docker run -it --name powershell microsoft/powershell-nightly"
 alias PowershellMoveToContainer="docker cp $WorkingFile powershell:/home/tools"
 
-# Not Finnished / Under Development
-# docker ps -aqf 'name=<container_name>'
-#alias PowershellContainerID="set $PowerID = docker ps -aqf 'name=powershell '"
-# docker commit <container_id> new_image_name:tag_name (optional)
-#alias PowerShellCommit"docker commit $PowerID"
-
+alias Notes="(cd ~/Projects/OSINT_CheatSheet/ && hugo server)"
+alias sha1sum="sha1sum * | awk 'print $1'"
 ################################### Misc ####################################################################
-# Set Gopath												     	
-export GOPATH=$HOME/go												
+# Set Gopath
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # SSH
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # thefuck
-eval $(thefuck --alias) 
+eval $(thefuck --alias)
 
 # wal Script Requirement
-#(wal -r &)
+# (wal -r &)
 # If the command above doesn't work, try this alternative.
-#setsid wal -r
+# setsid wal -r
 ###############################################################################################################
