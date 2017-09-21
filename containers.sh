@@ -1,4 +1,6 @@
 					# Docker Containers #
-#################################################################
-sudo docker pull microsoft/powershell
-#################################################################
+docker pull microsoft/powershell-nightly
+docker pull golang
+docker pull alpine
+docker pull ubuntu
+
