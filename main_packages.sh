@@ -29,6 +29,8 @@ curl /
 vim /
 git / 
 scrot /
+nim /
+linux-headers /
 glances
 #-----------------------------------------#
 
