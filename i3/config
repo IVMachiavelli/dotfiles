@@ -102,8 +102,8 @@ bindsym $mod+Shift+9 move container to workspace $w9
 bindsym $mod+Shift+0 move container to workspace $w10
 
 # Force Workspace with "xprop"
-assign [class="Firefox"] $w2
-assign [class="Atom"] $w3
+#assign [class="Firefox"] $w2
+#assign [class="Atom"] $w3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -138,43 +138,29 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set_from_resources $fg i3wm.color7
-set_from_resources $bg i3wm_color2
+# Colors
+set $green #7A846C
+set $bg #282828
+set $txt #ffffff
 
-# class                 border    backgr.      text    indicator child_border
-client.focused          $bg     $bg     	$fg    $bg  	$bg
-client.focused_inactive $bg 	$bg    		$fg    $bg 	$bg
-client.unfocused        $bg 	$bg    		$fg    $bg 	$bg
-client.urgent           $bg   	$bg	      	$fg    $bg 	$bg
-client.placeholder      $bg 	$bg 		$fg     $bg  	$bg
+# Class          #Border #Background  #Text #Indicator #Child_Border
+client.focused   $green  $bg          $txt  $green     $green
 
-client.background       $bg
+# i3gaps config
+# for_window [class="*"] border pixel 2 #ffffff
+# gaps inner 10
 
-
-################### Bar Disabled ########################
-#bar {
-#	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-#	workspace_buttons yes
-#	position bottom
-	
-	
-#}
-#################### Bar Disabled #####################
-
-#i3gaps config
-for_window [class="*"] border pixel 1 #ffffff
-gaps inner 10
-
-smart_borders on
-smart_gaps on
+# smart_borders on
+# smart_gaps on
 
 #i3lock
 bindsym $mod+shift+x exec i3lock --color #2A353B
 # Disable borders & windows
 hide_edge_borders none
-new_window 1pixel
+#new_window 1pixel
+new_window pixel 2
 
-############################ Startup Applications #############################################
+##### Startup Applications ####
 # Network Manager
 exec --no-startup-id nm-applet
 # Xresources Hack
@@ -186,3 +172,4 @@ exec_always feh --bg-center ~/Pictures/wallhaven-42713.jpg
 #Polybar
 exec polybar main
 # exec_always --no-startup-id ~/.config/polybar/./launch.sh
+exec (cd ~/Notes && hugo server -p 9162 )
