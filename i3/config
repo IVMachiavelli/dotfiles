@@ -168,8 +168,10 @@ exec xrdb ~/.Xresources
 # Compton
 exec compton -f
 # Wallpaper
-exec_always feh --bg-center ~/Pictures/wallhaven-42713.jpg
+exec_always feh --bg-fill ~/Pictures/jay-dantinne-246948.jpg
 #Polybar
 exec polybar main
 # exec_always --no-startup-id ~/.config/polybar/./launch.sh
 exec (cd ~/Notes && hugo server -p 9162 )
+# Go Documentation
+exec --no-startup-id godoc -http=:8080    
