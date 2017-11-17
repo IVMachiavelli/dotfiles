@@ -102,7 +102,7 @@ bindsym $mod+Shift+9 move container to workspace $w9
 bindsym $mod+Shift+0 move container to workspace $w10
 
 # Force Workspace with "xprop"
-assign [class="Firefox"] $w2
+#assign [class="Firefox"] $w2
 #assign [class="Atom"] $w3
 
 # reload the configuration file
@@ -137,6 +137,14 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Colors
+set $green #7A846C
+set $bg #282828
+set $txt #ffffff
+
+# Class          #Border #Background  #Text #Indicator #Child_Border
+client.focused   $green  $bg          $txt  $green     $green
 
 # i3gaps config
 # for_window [class="*"] border pixel 2 #ffffff
